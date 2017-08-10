@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Test-SDK01'
-  s.version          = '1.0'
+  s.version          = '2.0'
   s.summary          = 'Test.'
   s.homepage         = 'https://github.com/hyup1028-nhnent/CocoaPodsTest'
   s.license          = {  :type => 'Apache License, Version 2.0', :text => <<-LICENSE
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     LICENSE
   }
   s.author           = { 'hyup1028-nhnent' => 'hyup1028@nhnent.com' }
-  s.source           = { :http => 'https://github.com/hyup1028-nhnent/CocoaPodsTest/archive/1.0.zip' }
+  s.source           = { :http => 'https://github.com/hyup1028-nhnent/CocoaPodsTest/archive/2.0.zip' }
   
   s.platform     = :ios, '8.0'
   s.requires_arc = true
