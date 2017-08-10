@@ -1,0 +1,6 @@
+framework module SDK03 {
+  umbrella header "SDK03.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module SDK01 {
+  umbrella header "SDK01.h"
+
+  export *
+  module * { export * }
+}
