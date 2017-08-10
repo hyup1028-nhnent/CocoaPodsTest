@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
   
-  s.ios.vendored_frameworks = 'iphoneos/SDK01.framework'
+  s.ios.vendored_frameworks = 'Frameworks/SDK01.framework'
   s.weak_frameworks = 'AdSupport'
   s.frameworks = 'UIKit', 'CoreText', 'AudioToolbox', 'AVFoundation', 'CoreGraphics'     
 end
