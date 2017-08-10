@@ -1,15 +1,29 @@
 Pod::Spec.new do |s|
-  s.name = "Test-SDK01"
-  s.version = "3.0"
-  s.summary = "Test."
-  s.license = {"type"=>"Apache License, Version 2.0", "text"=>"    Licensed under the Apache License, Version 2.0 (the \"License\");\n    you may not use this file except in compliance with the License.\n    You may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\n    Unless required by applicable law or agreed to in writing, software\n    distributed under the License is distributed on an \"AS IS\" BASIS,\n    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n    See the License for the specific language governing permissions and\n    limitations under the License.\n"}
-  s.authors = {"hyup1028-nhnent"=>"hyup1028@nhnent.com"}
-  s.homepage = "https://github.com/hyup1028-nhnent/CocoaPodsTest"
-  s.frameworks = ["UIKit", "CoreText", "AudioToolbox", "AVFoundation", "CoreGraphics"]
-  s.weak_frameworks = "AdSupport"
-  s.requires_arc = true
-  s.source = { :path => '.' }
+  s.name             = 'Test-SDK02'
+  s.version          = '4.0'
+  s.summary          = 'Test SDK 02'
+  s.homepage         = 'https://github.com/hyup1028-nhnent/CocoaPodsTest'
+  s.license          = {  :type => 'Apache License, Version 2.0', :text => <<-LICENSE
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-  s.ios.deployment_target    = '8.0'
-  s.ios.vendored_framework   = 'ios/Test-SDK01.framework'
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    LICENSE
+  }
+  s.author           = { 'hyup1028-nhnent' => 'hyup1028@nhnent.com' }
+  s.source           = { :http => 'https://github.com/hyup1028-nhnent/CocoaPodsTest/archive/4.0.zip' }
+  
+  s.platform     = :ios, '8.0'
+  s.requires_arc = true
+  
+  s.ios.vendored_frameworks = 'CocoaPodsTest-4.0/Frameworks/SDK02.framework'
+  s.weak_frameworks = 'AdSupport'
+  s.frameworks = 'UIKit', 'CoreText', 'AudioToolbox', 'AVFoundation', 'CoreGraphics'     
 end
