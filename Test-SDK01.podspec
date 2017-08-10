@@ -18,13 +18,12 @@ Pod::Spec.new do |s|
     LICENSE
   }
   s.author           = { 'hyup1028-nhnent' => 'hyup1028@nhnent.com' }
-  s.source           = { :git => 'https://github.com/hyup1028-nhnent/CocoaPodsTest.git', :tag => s.version.to_s }
+  s.source           = { :http => 'https://github.com/hyup1028-nhnent/CocoaPodsTest/archive/1.0.zip' }
   
   s.platform     = :ios, '8.0'
   s.requires_arc = true
-
-  s.ios.vendored_frameworks = 'iphoneos/SDK01/SDK01.framework'
+  
+  s.ios.vendored_frameworks = 'iphoneos/SDK01.framework'
   s.weak_frameworks = 'AdSupport'
   s.frameworks = 'UIKit', 'CoreText', 'AudioToolbox', 'AVFoundation', 'CoreGraphics'     
 end
-
